@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #b30000; /* 🔴 vermelho forte */
+  color: white;
+  transition: 0.3s;
+}
+
+header {
+  background: #7a0000;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  background: white;
+  color: #b30000;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+/* GALERIA */
+.galeria, .historia-img {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 250px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* MODO ESCURO */
+.dark {
+  background: #111;
+  color: white;
+}.botoes-estilos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.botoes-estilos button {
+  background: white;
+  color: #b30000;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.estilo {
+  padding: 60px 20px;
+  border-top: 2px solid white;
+}.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
